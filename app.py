@@ -197,7 +197,7 @@ def scrape_and_send(INDEED_SEARCH, QUERY_STRING):
                 "title": title,
                 "company_name": company,
                 "company_location": location,
-                "description": description[:2000],
+                "description": description[:3000],
                 "source_url": f"https://www.indeed.com/viewjob?jk={jk}",
                 "query_string": QUERY_STRING
             }
