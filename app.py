@@ -11,7 +11,7 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 
 
-API_URL = "https://3.212.143.212/linkedin-job/api/create-job"
+API_URL = "https://anycore.info/linkedin-job/api/create-job"
 
 app = Flask(__name__)
 
@@ -21,7 +21,7 @@ def build_driver():
     options = uc.ChromeOptions()
     options.add_argument("--start-maximized")
     options.add_argument("--disable-blink-features=AutomationControlled")
-    driver = uc.Chrome(options=options)
+    driver = uc.Chrome(options=options, version_main=144)
     return driver
 
 
